@@ -1,4 +1,4 @@
-f<h1 align="center">PROYECTO INDIVIDUAL Nº1/h1>
+<h1 align="center">PROYECTO INDIVIDUAL Nº1</h1>
 
 ## Funciones desarrolladas en la API
 
