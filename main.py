@@ -1,6 +1,8 @@
 import pandas as pd
 from fastapi import FastAPI
 import numpy as np
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 app = FastAPI()
 
@@ -129,3 +131,33 @@ def sentiment_analysis(anio : int):
     }
 
     return diccionario_conteo
+
+@app.get("/recomendacion_juego/{id}")
+def recomendacion_juego(id: int):
+    df_steam_games = pd.read_csv('data/df_steam_games_final.csv')
+    columns = ['id','title','genres']
+    df_steam = df_steam_games.dropna(subset=columns)[columns]
+    df_steam['genres'] = df_steam['genres'].apply(eval)
+    df_steam['id'] = df_steam['id'].astype(int)
+
+    tamano_muestra = 3000
+    df_steam_muestra= df_steam.sample(n=tamano_muestra, random_state=42)
+    df_steam_muestra = df_steam_muestra.reset_index(drop=True)
+
+    tfidf_vectorizer = TfidfVectorizer()
+    genero_matrix = tfidf_vectorizer.fit_transform(df_steam_muestra['genres'].apply(lambda x: ' '.join(x)))
+    cosine_sim = cosine_similarity(genero_matrix, genero_matrix)
+
+    idx = df_steam_muestra[df_steam_muestra['id'] == id].index[0]
+    sim_scores = list(enumerate(cosine_sim[idx]))
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+    top_indices = [i for i, _ in sim_scores[1:6]]
+    
+    juegos = df_steam_muestra['title'].iloc[top_indices]
+
+    dicc = {'Juegos:' : juegos.values.tolist()}
+
+    return dicc
+
+
+
