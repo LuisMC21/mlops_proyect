@@ -3,9 +3,10 @@
 ## Archivos incluidos en el repositorio
 
 1. Carpeta data: Se encuentran todos los archivos csv ya transformados y listos para usar en las funciones.
-2. Archivo main.py: Incluye el código de las transformaciones realizadas y el desarrollo de las funciones.
-3. Archivo análisisSent.ipynb: Incluye el código realizado para hacer un análisis de sentimientos de los comentarios de los usuarios.
-4. Archivo requirements.txt: Inlcuye las librerías que deben instalarse para el proyecto.
+2. Archivo proyecto.ipynb: Contiene el código con las transformaciones desarrrolladas en los datasets.
+3. Archivo main.py: Incluye el código con la creación de funciones para la API.
+4. Archivo análisisSent.ipynb: Incluye el código realizado para hacer un análisis de sentimientos de los comentarios de los usuarios.
+5. Archivo requirements.txt: Inlcuye las librerías que deben instalarse para el proyecto.
 
 Datasets originales se encuentran en el siguiente link: <a href="https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj">https://drive.google.com/drive/folders/1HqBG2-sUkz_R3h1dZU5F2uAzpRn7BSpj</a>
    
