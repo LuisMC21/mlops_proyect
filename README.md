@@ -2,6 +2,15 @@
 
 ## Funciones desarrolladas en la API
 
+Archivos incluidos en el positorio
+
+1. Carpeta data: Se encuentran todos los archivos csv ya transformados y listos para usar en las funciones.
+2. Archivo main.py: Incluye el código de las transformaciones realizadas y el desarrollo de las funciones.
+3. Archivo análisisSent.ipynb: Incluye el código realizado para hacer un análisis de sentimientos de los comentarios de los usuarios.
+4. Archivo requirements.txt: Inlcuye las librerías que deben instalarse para el proyecto.
+   
+## Funciones desarrolladas en la API
+
 1. **userdata(User_id: str):** Debe devolver cantidad de dinero gastado por el usuario, el porcentaje de recomendación en base a reviews.recommend y cantidad de items.
 
 2. **countreviews(YYYY-MM-DD y YYYY-MM-DD: str):** Cantidad de usuarios que realizaron reviews entre las fechas dadas y, el porcentaje de recomendación de los mismos en base a reviews.recommend.
