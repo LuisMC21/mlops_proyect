@@ -11,3 +11,5 @@
 4. **userforgenre(género: str):** Top 5 de usuarios con más horas de juego en el género dado, con su URL (del user) y user_id.
 
 5. **developer(desarrollador: str):** Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
+
+6. **def sentiment_analysis( año : int ):** Según el año de lanzamiento, se devuelve una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
