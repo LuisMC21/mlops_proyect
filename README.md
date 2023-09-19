@@ -26,7 +26,7 @@ Datasets originales se encuentran en el siguiente link: <a href="https://drive.g
 
 ## Deploy del proyecto
 
-   En el archivo main.py incluye las funciones para la API, para la cual se usó la librería FastAPI (<a href="href="https://fastapi.tiangolo.com/"">https://fastapi.tiangolo.com/</a>) y como      servidor se usó la plataforma Render (<a href="https://render.com/">https://render.com/</a>)
+   En el archivo main.py incluye las funciones para la API, para la cual se usó la librería FastAPI (<a href="https://fastapi.tiangolo.com/">https://fastapi.tiangolo.com/</a>) y como      servidor se usó la plataforma Render (<a href="https://render.com/">https://render.com/</a>)
 
 ## Link del proyecto
 
