@@ -1,4 +1,4 @@
-<h1 align="center"># mlops_proyect</h1>
+f<h1 align="center">PROYECTO INDIVIDUAL Nº1/h1>
 
 ## Funciones desarrolladas en la API
 
@@ -12,4 +12,4 @@
 
 5. **developer(desarrollador: str):** Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
 
-6. **def sentiment_analysis( año : int ):** Según el año de lanzamiento, se devuelve una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
+6. **sentiment_analysis( año : int ):** Según el año de lanzamiento, se devuelve una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
