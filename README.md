@@ -20,6 +20,15 @@ Datasets originales se encuentran en el siguiente link: <a href="https://drive.g
 
 4. **userforgenre(género: str):** Top 5 de usuarios con más horas de juego en el género dado, con su URL (del user) y user_id.
 
-5. **developer(desarrollador: str):** Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
+6. **developer(desarrollador: str):** Cantidad de items y porcentaje de contenido Free por año según empresa desarrolladora.
 
-6. **sentiment_analysis( año : int ):** Según el año de lanzamiento, se devuelve una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
+7. **sentiment_analysis( año : int ):** Según el año de lanzamiento, se devuelve una lista con la cantidad de registros de reseñas de usuarios que se encuentren categorizados con un análisis de sentimiento.
+
+## Deploy del proyecto
+
+   En el archivo main.py incluye las funciones para la API, para la cual se usó la librería FastAPI (<a/ href="https://fastapi.tiangolo.com/">https://fastapi.tiangolo.com/</a>) y como      servidor se usó la plataforma Render (<a href="https://render.com/">https://render.com/</a>)
+
+## Link del proyecto
+
+   <h2><a href="https://mlops-proyect-t1ab.onrender.com/docs">https://mlops-proyect-t1ab.onrender.com/docs</a></h2>
+   
