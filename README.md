@@ -1,5 +1,9 @@
 <h1 align="center">PROYECTO INDIVIDUAL Nº1</h1>
 
+## Descripción del proyecto
+
+El proyecto consta de un análisis exploratorio de datos de películas, crear una API para acceder a información sobre películas y entrenar un modelo de recomendación basado en similitud de géneros.
+
 ## Archivos incluidos en el repositorio
 
 1. Carpeta data: Se encuentran todos los archivos csv ya transformados y listos para usar en las funciones.
